@@ -682,10 +682,14 @@
 	}
 
 #partners img {
-	width: 250px;
+	width: 100%;
 	height: auto;
-	margin-right: 40px;
+	margin-right: 0;
 	border-radius: 0;
+}
+
+#partners p {
+	text-align: justify;
 }
 
 /* Mission */
