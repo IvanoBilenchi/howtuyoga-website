@@ -41,6 +41,10 @@
 		margin: 0 0 2em 0;
 	}
 
+	p {
+		text-align: justify;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
 		font-weight: 700;
@@ -80,17 +84,55 @@
 	}
 
 	blockquote {
+		font-size: 18px;
+		font-style: italic;
+		margin: 0.25em 0;
+		padding: 0.35em 40px;
+		line-height: 1.45;
+		position: relative;
+		color: #383838;
+	}
+
+	blockquote:before {
+		font-family: Georgia, serif;
+		display: block;
+		padding-left: 10px;
+		content: "\201C";
+		font-size: 80px;
+		position: absolute;
+		left: -20px;
+		top: -20px;
+		color: #7a7a7a;
+	}
+
+	blockquote cite {
+		color: #999999;
+		font-size: 14px;
+		display: block;
+		margin-top: 5px;
+	}
+
+	blockquote cite:before {
+		content: "\2014 \2009";
+	}
+
+/*	blockquote {
 		border-left: solid 0.5em #888888;
 		font-style: italic;
 		padding: 1em 0 1em 2em;
-	}
+	}*/
 
 	section.special, article.special {
 		text-align: center;
 	}
 
-	header.major {
+	header.major,
+	header.minor {
 		padding-bottom: 4em;
+	}
+
+	header.major {
+		text-align: center;
 	}
 
 	header h2 {
@@ -474,7 +516,6 @@
 	.wrapper.style2 {
 		background: #ececec;
 		padding: 6em 0;
-		text-align: center;
 	}
 
 	.wrapper.style3 {
@@ -625,12 +666,9 @@
 
 /* Main */
 
-/*	.no-sidebar #main .major, .left-sidebar #main .major, .right-sidebar #main .major {
+	.left-sidebar #main .major,
+	.right-sidebar #main .major {
 		text-align: left;
-	}*/
-
-	#main .major {
-		text-align: center;
 	}
 
 	#main {
@@ -657,7 +695,16 @@
 			margin-bottom: 3em;
 		}
 
+/* Pseudo-lists */
+.pseudo-list img {
+	padding-top: .8em;
+}
+
 /* Index */
+
+#skills p {
+	text-align: center;
+}
 
 #sdg img {
 	margin-bottom: 1em;
@@ -671,8 +718,8 @@
 	border-color: white;
 }
 
-	#team p {
-		text-align: justify;
+	#team h3 {
+		text-align: center;
 	}
 
 	#team .image.feature img {
@@ -681,24 +728,6 @@
 		width: 80%;
 	}
 
-#partners img {
-	width: 100%;
-	height: auto;
-	margin-right: 0;
-	border-radius: 0;
-}
-
-#partners p {
-	text-align: justify;
-}
-
-/* Mission */
-
-#mission p,
-#project p {
-	text-align: justify;
-}
-
 /* Footer */
 
 	#footer {
@@ -706,12 +735,14 @@
 		color: #fff;
 	}
 
-		#footer .major h2 {
+		#footer .major h2,
+		#footer .minor h2 {
 			font-size: 2em;
 			color: #FFF;
 		}
 
-		#footer .major .byline {
+		#footer .major .byline,
+		#footer .minor .byline {
 			font-size: 1.1em;
 		}
 
