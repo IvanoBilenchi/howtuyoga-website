@@ -385,17 +385,6 @@
 				border-top: none;
 			}
 
-		ul.sdg img {
-			margin-bottom: 1em;
-		}
-
-		ul.partners img {
-			width: 250px;
-			height: auto;
-			margin-right: 40px;
-			border-radius: 0;
-		}
-
 /* Tables */
 
 	table {
@@ -668,7 +657,13 @@
 			margin-bottom: 3em;
 		}
 
-/* Team */
+/* Index */
+
+#sdg img {
+	margin-bottom: 1em;
+}
+
+/* Who */
 
 #team img {
 	border-radius: 50%;
@@ -685,6 +680,20 @@
 		display: block;
 		width: 80%;
 	}
+
+#partners img {
+	width: 250px;
+	height: auto;
+	margin-right: 40px;
+	border-radius: 0;
+}
+
+/* Mission */
+
+#mission p,
+#project p {
+	text-align: justify;
+}
 
 /* Footer */
 
