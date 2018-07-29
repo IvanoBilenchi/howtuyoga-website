@@ -389,6 +389,13 @@
 			margin-bottom: 1em;
 		}
 
+		ul.partners img {
+			width: 250px;
+			height: auto;
+			margin-right: 40px;
+			border-radius: 0;
+		}
+
 /* Tables */
 
 	table {
@@ -629,11 +636,11 @@
 
 /* Main */
 
-	.no-sidebar #main .major, .left-sidebar #main .major, .right-sidebar #main .major {
+/*	.no-sidebar #main .major, .left-sidebar #main .major, .right-sidebar #main .major {
 		text-align: left;
-	}
+	}*/
 
-	.homepage #main .major {
+	#main .major {
 		text-align: center;
 	}
 
@@ -660,6 +667,24 @@
 		#main .sidebar > :first-child {
 			margin-bottom: 3em;
 		}
+
+/* Team */
+
+#team img {
+	border-radius: 50%;
+	border: 10px solid;
+	border-color: white;
+}
+
+	#team p {
+		text-align: justify;
+	}
+
+	#team .image.feature img {
+		margin: auto;
+		display: block;
+		width: 80%;
+	}
 
 /* Footer */
 
