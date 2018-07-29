@@ -385,6 +385,10 @@
 				border-top: none;
 			}
 
+		ul.sdg img {
+			margin-bottom: 1em;
+		}
+
 /* Tables */
 
 	table {
