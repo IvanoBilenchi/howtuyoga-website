@@ -256,14 +256,25 @@
 
 /* Cards */
 
-	.card {
+	img.card {
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	}
 
-	.card:hover {
+	img.card:hover {
 		transform: scale(1.02, 1.02);
 		box-shadow: 0 6px 10px rgba(0,0,0,0.22), 0 12px 20px rgba(0,0,0,0.25);
+	}
+
+/* Person images */
+
+	img.person {
+		display: block;
+		width: 80%;
+		margin: auto auto 2em auto;
+		border-radius: 50%;
+		border: 10px solid;
+		border-color: white;
 	}
 
 /* Lists */
@@ -501,6 +512,16 @@
 			font-size: 0.8em;
 		}
 
+/* Pseudo-lists */
+
+	.pseudo-list img {
+		display: block;
+		margin: .8em auto auto auto;
+		max-width: 100%;
+		max-height: 150px;
+		width: auto;
+	}
+
 /* Wrapper */
 
 	.wrapper.style1 {
@@ -689,34 +710,17 @@
 			margin-bottom: 3em;
 		}
 
-/* Pseudo-lists */
-.pseudo-list img {
-	display: block;
-	padding-top: .8em;
-	max-width: 100%;
-	max-height: 180px;
-	margin-left: auto;
-    margin-right: auto;
-	width: auto;
-}
+	/* Index */
 
-/* Index */
+	#skills p {
+		text-align: center;
+	}
 
-#skills p {
-	text-align: center;
-}
+	#sdg img {
+		margin-bottom: 1em;
+	}
 
-#sdg img {
-	margin-bottom: 1em;
-}
-
-/* Who */
-
-#team img {
-	border-radius: 50%;
-	border: 10px solid;
-	border-color: white;
-}
+	/* Who */
 
 	#team h3 {
 		text-align: center;
@@ -727,9 +731,8 @@
 		margin-top: 1.5em;
 	}
 
-	#team .image.feature img {
-		margin: auto;
-		display: block;
+	#advisors img {
+		max-height: unset;
 		width: 80%;
 	}
 
@@ -772,138 +775,138 @@
 		text-align: center;
 	}
 
-	.social a.fa {
-		text-decoration: none;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		text-align: center;
-		font-size: 25px;
-		padding-top: 1px;
-		margin-right: -4.5px;
-	}
+		.social a.fa {
+			text-decoration: none;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 25px;
+			padding-top: 1px;
+			margin-right: -4.5px;
+		}
 
-	.social .fa:hover {
-		opacity: 0.80;
-	}
+		.social .fa:hover {
+			opacity: 0.80;
+		}
 
-	.social .fa-globe {
-		background: #aaaaaa;
-		color: white;
-	}
+		.social .fa-globe {
+			background: #aaaaaa;
+			color: white;
+		}
 
-	.social .fa-envelope {
-		background: #fac846;
-		color: white;
-	}
+		.social .fa-envelope {
+			background: #fac846;
+			color: white;
+		}
 
-	.social .fa-facebook {
-		background: #3B5998;
-		color: white;
-	}
+		.social .fa-facebook {
+			background: #3B5998;
+			color: white;
+		}
 
-	.social .fa-twitter {
-		background: #55ACEE;
-		color: white;
-	}
+		.social .fa-twitter {
+			background: #55ACEE;
+			color: white;
+		}
 
-	.social .fa-google {
-		background: #dd4b39;
-		color: white;
-	}
+		.social .fa-google {
+			background: #dd4b39;
+			color: white;
+		}
 
-	.social .fa-linkedin {
-		background: #007bb5;
-		color: white;
-	}
+		.social .fa-linkedin {
+			background: #007bb5;
+			color: white;
+		}
 
-	.social .fa-youtube {
-		background: #bb0000;
-		color: white;
-	}
+		.social .fa-youtube {
+			background: #bb0000;
+			color: white;
+		}
 
-	.social .fa-instagram {
-		background: #125688;
-		color: white;
-	}
+		.social .fa-instagram {
+			background: #125688;
+			color: white;
+		}
 
-	.social .fa-pinterest {
-		background: #cb2027;
-		color: white;
-	}
+		.social .fa-pinterest {
+			background: #cb2027;
+			color: white;
+		}
 
-	.social .fa-snapchat-ghost {
-		background: #fffc00;
-		color: white;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	}
+		.social .fa-snapchat-ghost {
+			background: #fffc00;
+			color: white;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
 
-	.social .fa-skype {
-		background: #00aff0;
-		color: white;
-	}
+		.social .fa-skype {
+			background: #00aff0;
+			color: white;
+		}
 
-	.social .fa-android {
-		background: #a4c639;
-		color: white;
-	}
+		.social .fa-android {
+			background: #a4c639;
+			color: white;
+		}
 
-	.social .fa-dribbble {
-		background: #ea4c89;
-		color: white;
-	}
+		.social .fa-dribbble {
+			background: #ea4c89;
+			color: white;
+		}
 
-	.social .fa-vimeo {
-		background: #45bbff;
-		color: white;
-	}
+		.social .fa-vimeo {
+			background: #45bbff;
+			color: white;
+		}
 
-	.social .fa-tumblr {
-		background: #2c4762;
-		color: white;
-	}
+		.social .fa-tumblr {
+			background: #2c4762;
+			color: white;
+		}
 
-	.social .fa-vine {
-		background: #00b489;
-		color: white;
-	}
+		.social .fa-vine {
+			background: #00b489;
+			color: white;
+		}
 
-	.social .fa-foursquare {
-		background: #45bbff;
-		color: white;
-	}
+		.social .fa-foursquare {
+			background: #45bbff;
+			color: white;
+		}
 
-	.social .fa-stumbleupon {
-		background: #eb4924;
-		color: white;
-	}
+		.social .fa-stumbleupon {
+			background: #eb4924;
+			color: white;
+		}
 
-	.social .fa-flickr {
-		background: #f40083;
-		color: white;
-	}
+		.social .fa-flickr {
+			background: #f40083;
+			color: white;
+		}
 
-	.social .fa-yahoo {
-		background: #430297;
-		color: white;
-	}
+		.social .fa-yahoo {
+			background: #430297;
+			color: white;
+		}
 
-	.social .fa-soundcloud {
-		background: #ff5500;
-		color: white;
-	}
+		.social .fa-soundcloud {
+			background: #ff5500;
+			color: white;
+		}
 
-	.social .fa-reddit {
-		background: #ff5700;
-		color: white;
-	}
+		.social .fa-reddit {
+			background: #ff5700;
+			color: white;
+		}
 
-	.social .fa-github {
-		background: #000000;
-		color: white;
-	}
+		.social .fa-github {
+			background: #000000;
+			color: white;
+		}
 
-	.social .fa-rss {
-		background: #ff6600;
-		color: white;
-	}
+		.social .fa-rss {
+			background: #ff6600;
+			color: white;
+		}
