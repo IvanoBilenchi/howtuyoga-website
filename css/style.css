@@ -921,6 +921,6 @@
 
 /* Mission */
 
-	#vision p {
+	#vision p, #mission p {
 		text-align: center;
 	}
